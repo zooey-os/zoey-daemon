@@ -1,0 +1,12 @@
+[Unit]
+Description=ZoeyOS Ambient Background Daemon
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/zoey-daemon
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
